@@ -24,8 +24,6 @@ export default function Footer() {
             <h4 className="font-mono text-xs text-white uppercase tracking-widest mb-6">Institucional</h4>
             <ul className="space-y-3">
               <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Nossa História</a></li>
-              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Nossas Lojas</a></li>
-              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Trabalhe Conosco</a></li>
               <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Parcerias</a></li>
             </ul>
           </div>

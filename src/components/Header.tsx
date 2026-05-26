@@ -269,11 +269,12 @@ const subcategoriesData: Record<string, string[]> = {
   "Transmissao": [
     "Cabo De Cambio",
     "Diferencial"
-  ],
-  "Nossas lojas": []
+  ]
 };
 
 const mainCategories = Object.keys(subcategoriesData);
+const motorIndex = mainCategories.indexOf("Motor");
+const topBarCategories = [...mainCategories.slice(0, motorIndex + 1)];
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -360,8 +361,8 @@ export default function Header() {
       {/* Bottom Row: Categories (Desktop Only) */}
       <div className="hidden md:block bg-slate-900/40 border-t border-slate-800/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex justify-start gap-6 lg:gap-8 items-center h-12 relative w-full overflow-x-auto no-scrollbar">
-            {mainCategories.map((category) => (
+          <nav className="flex justify-center gap-6 lg:gap-8 items-center h-12 relative w-full overflow-x-auto no-scrollbar">
+            {topBarCategories.map((category) => (
               <div 
                 key={category}
                 className="h-full flex items-center px-2 cursor-pointer group"
@@ -453,7 +454,7 @@ export default function Header() {
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
               <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mx-auto gap-8">
-                {mainCategories.filter(c => c !== "Todas as categorias" && c !== "Nossas lojas" && subcategoriesData[c].length > 0).map(mainCat => (
+                {mainCategories.filter(c => c !== "Todas as categorias" && subcategoriesData[c].length > 0).map(mainCat => (
                   <div key={mainCat}>
                     <h3 className="font-bold text-white mb-4 border-b border-slate-700/50 pb-2">{mainCat}</h3>
                     <ul className="space-y-2">
