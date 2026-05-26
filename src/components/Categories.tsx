@@ -23,10 +23,10 @@ export default function Categories() {
         
         <div className="mb-16">
           <h2 className="font-sans text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">
-            Component Modules
+            Explore nossas Categorias
           </h2>
           <p className="font-mono text-xs text-slate-400 uppercase tracking-widest max-w-2xl">
-            Select an engineering subsystem to browse certified precision modules
+            Selecione uma categoria para encontrar as melhores peças para o seu veículo
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function Categories() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative glass-panel p-6 rounded-2xl overflow-hidden block"
+                className="group relative bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-6 rounded-2xl overflow-hidden block hover:bg-slate-800/80 transition-colors shadow-lg"
               >
                 {/* Background Tech Accent */}
                 <div className="absolute right-0 bottom-0 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500 scale-150 translate-x-4 translate-y-4">
@@ -51,22 +51,22 @@ export default function Categories() {
                 </div>
                 
                 <div className="relative z-10 flex flex-col h-full justify-between gap-8">
-                  <div className="w-12 h-12 rounded-full border border-slate-700 bg-slate-800/50 flex items-center justify-center group-hover:border-blue-500/50 group-hover:bg-blue-900/20 transition-colors duration-300">
-                    <Icon className="w-5 h-5 text-slate-300 group-hover:text-blue-400 transition-colors" />
+                  <div className="w-12 h-12 rounded-full border border-slate-700 bg-slate-800/50 flex items-center justify-center group-hover:border-[#E31837]/50 group-hover:bg-red-900/20 transition-colors duration-300">
+                    <Icon className="w-5 h-5 text-slate-300 group-hover:text-[#E31837] transition-colors" />
                   </div>
                   
                   <div>
-                    <h3 className="font-sans font-semibold text-lg text-white mb-1 group-hover:text-blue-300 transition-colors">
+                    <h3 className="font-sans font-semibold text-lg text-white mb-1 group-hover:text-[#E31837] transition-colors">
                       {cat}
                     </h3>
                     <p className="font-mono text-[10px] text-slate-500 uppercase tracking-wider">
-                      {subCount} System Parts
+                      {subCount} Subcategorias
                     </p>
                   </div>
                 </div>
                 
                 {/* Hover line */}
-                <div className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                <div className="absolute bottom-0 left-0 w-full h-[2px] bg-[#E31837] scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
               </motion.a>
             );
           })}

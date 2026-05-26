@@ -6,18 +6,18 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import SearchBlock from './components/SearchBlock';
-import Categories from './components/Categories';
 import Products from './components/Products';
+import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-950 font-sans selection:bg-blue-500/30">
+    <div className="min-h-screen bg-slate-950 font-sans selection:bg-blue-500/30 pt-[124px] md:pt-[144px]">
       <Header />
       <Hero />
       <SearchBlock />
-      <Categories />
       <Products />
+      <Testimonials />
       <Footer />
     </div>
   );

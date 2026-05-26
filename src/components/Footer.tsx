@@ -5,46 +5,47 @@ export default function Footer() {
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-1">
-             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 relative flex items-center justify-center">
-                <div className="absolute inset-0 bg-slate-800 rotate-45 rounded-sm"></div>
-                <div className="text-slate-300 font-bold text-sm relative z-10">M</div>
+             <div className="flex items-center cursor-pointer mb-6">
+              <div className="flex flex-col">
+                <span className="font-extrabold text-2xl tracking-tight text-white uppercase">
+                  Montezuma
+                </span>
+                <span className="font-semibold text-sm tracking-widest text-[#E31837] uppercase">
+                  Motors
+                </span>
               </div>
-              <span className="font-sans font-bold tracking-widest uppercase text-slate-300">
-                Montezuma
-              </span>
             </div>
             <p className="font-sans text-slate-500 text-sm leading-relaxed">
-              Premium automotive technology platform focused on performance, precision, and modern automotive engineering.
+              Sua parceira de confiança para peças de alta qualidade. Oferecemos o melhor ecossistema de partes automotivas para a manutenção perfeita.
             </p>
           </div>
 
           <div>
-            <h4 className="font-mono text-xs text-white uppercase tracking-widest mb-6">Platform</h4>
+            <h4 className="font-mono text-xs text-white uppercase tracking-widest mb-6">Institucional</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-blue-400 transition-colors">Digital Ecosystem</a></li>
-              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-blue-400 transition-colors">Compatibility Matrix</a></li>
-              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-blue-400 transition-colors">API Access</a></li>
-              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-blue-400 transition-colors">Procurement</a></li>
+              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Nossa História</a></li>
+              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Nossas Lojas</a></li>
+              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Trabalhe Conosco</a></li>
+              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Parcerias</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-mono text-xs text-white uppercase tracking-widest mb-6">Engineering</h4>
+            <h4 className="font-mono text-xs text-white uppercase tracking-widest mb-6">Atendimento</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-blue-400 transition-colors">Performance Docs</a></li>
-              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-blue-400 transition-colors">Installation Guides</a></li>
-              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-blue-400 transition-colors">Telemetry</a></li>
-              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-blue-400 transition-colors">Tolerances</a></li>
+              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Central de Ajuda</a></li>
+              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Trocas e Devoluções</a></li>
+              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Política de Entregas</a></li>
+              <li><a href="#" className="font-sans text-sm text-slate-400 hover:text-[#E31837] transition-colors">Fale Conosco</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-mono text-xs text-white uppercase tracking-widest mb-6">System Status</h4>
-            <div className="glass-panel p-4 rounded-lg flex items-center justify-between border-slate-800">
-              <span className="font-mono text-xs text-slate-400 uppercase">Core Systems</span>
+            <h4 className="font-mono text-xs text-white uppercase tracking-widest mb-6">Suporte Online</h4>
+            <div className="bg-slate-900/50 p-4 rounded-lg flex items-center justify-between border border-slate-800">
+              <span className="font-mono text-xs text-slate-400 uppercase">Sistema</span>
               <div className="flex items-center gap-2">
-                <span className="font-mono text-[10px] text-emerald-400 uppercase">Online</span>
+                <span className="font-mono text-[10px] text-emerald-400 uppercase">Operacional</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
               </div>
             </div>
@@ -53,11 +54,11 @@ export default function Footer() {
 
         <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-mono text-[10px] text-slate-600 uppercase tracking-widest">
-            &copy; {new Date().getFullYear()} Montezuma Motors. All rights reserved.
+            &copy; {new Date().getFullYear()} Montezuma Motors. Todos os direitos reservados.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="font-mono text-[10px] text-slate-500 hover:text-slate-300 uppercase tracking-widest transition-colors">Privacy</a>
-            <a href="#" className="font-mono text-[10px] text-slate-500 hover:text-slate-300 uppercase tracking-widest transition-colors">Terms of Service</a>
+            <a href="#" className="font-mono text-[10px] text-slate-500 hover:text-slate-300 uppercase tracking-widest transition-colors">Privacidade</a>
+            <a href="#" className="font-mono text-[10px] text-slate-500 hover:text-slate-300 uppercase tracking-widest transition-colors">Termos de Uso</a>
           </div>
         </div>
 
